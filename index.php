@@ -65,7 +65,7 @@ while (true) {
     }
 
     $cfg = new Config(__DIR__ . '/users/' . $from_id . '.json', Config::JSON);
-    $msg = explode(" ", mb_strtolower($text));
+    $msg = explode(" ", $text);
     switch ($msg[0]) {
             /** Работа с конфигом */
         case "баланс":
